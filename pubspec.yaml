@@ -1,0 +1,29 @@
+name: gateway_experience_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2 # Keep or remove if not using
+  provider: ^6.0.5         # For state management
+  just_audio: ^0.10.3      # For FLAC playback
+  #just_audio_background: ^0.0.1-beta.9 # For background audio & notifications
+  dio: ^5.3.3              # For downloading files
+  path_provider: ^2.1.1    # To find correct local paths
+  permission_handler: ^12.0.0+1 # For requesting permissions (storage/internet)
+  shared_preferences: ^2.2.2 # To store download status persistently
+  flutter_svg: ^2.0.7      # If you want to use SVG for icons (optional)
+  equatable: ^2.0.5        # For model value comparison    
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

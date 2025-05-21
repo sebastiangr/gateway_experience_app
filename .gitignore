@@ -1,0 +1,70 @@
+# Flutter general
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.dart_tool/
+build/
+ios/
+android/app/build/
+android/.gradle/
+android/gradle/
+*.apk
+*.aab
+*.ipa
+*.ios
+*.sym
+*.dSYM
+*.jar
+*.log
+*.swp
+*.lock
+*.DS_Store
+.idea/
+.vscode/
+windows/flutter/generated_plugins.cmake
+linux/flutter/generated_plugins.cmake
+macos/Flutter/GeneratedGeneratedMacOSFrameworks.h
+macos/Flutter/GeneratedGeneratedMacOSFrameworks.m
+macos/Flutter/GeneratedPluginRegistrant.h
+macos/Flutter/GeneratedPluginRegistrant.m
+
+# Secrets and configuration files that should NOT be committed
+# If you use .env files for environment variables
+.env
+*.env
+.env.*
+!/.env.example # You can commit an example .env file
+
+# IDE-specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+nbproject/
+.project
+.classpath
+*.sublime-workspace
+*.sublime-project
+
+# Sensitive data that might be in constants.dart if not careful
+# It's better to use environment variables, but as a safeguard,
+# you could try to exclude specific files if absolutely necessary,
+# though this is NOT a reliable way to handle secrets.
+# Example (NOT RECOMMENDED - use environment variables instead):
+lib/utils/constants.dart
+
+# Keystore files
+*.jks
+*.keystore
+keystore.properties
+
+# Firebase (if you ever add it and don't want to commit google-services.json directly)
+# Though for public repos, it's often fine as it doesn't contain API keys directly.
+# Consider your project's needs.
+# /android/app/google-services.json
+# /ios/Runner/GoogleService-Info.plist
+
+# Specific to your project if you have other local config files
+# my_local_config.yaml
+
+    
