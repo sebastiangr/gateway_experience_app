@@ -27,6 +27,10 @@ macos/Flutter/GeneratedGeneratedMacOSFrameworks.h
 macos/Flutter/GeneratedGeneratedMacOSFrameworks.m
 macos/Flutter/GeneratedPluginRegistrant.h
 macos/Flutter/GeneratedPluginRegistrant.m
+linux/**/*
+macos/**/*
+web/**/*
+windows/**/*
 
 # Secrets and configuration files that should NOT be committed
 # If you use .env files for environment variables
@@ -66,5 +70,3 @@ keystore.properties
 
 # Specific to your project if you have other local config files
 # my_local_config.yaml
-
-    

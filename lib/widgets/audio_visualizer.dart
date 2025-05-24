@@ -6,7 +6,7 @@ import '../providers/audio_player_provider.dart';
 import '../utils/app_colors.dart';
 
 class AudioVisualizer extends StatefulWidget {
-  const AudioVisualizer({Key? key}) : super(key: key);
+  const AudioVisualizer({super.key});
 
   @override
   State<AudioVisualizer> createState() => _AudioVisualizerState();

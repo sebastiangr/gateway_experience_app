@@ -66,9 +66,9 @@ class MyApp extends StatelessWidget {
           iconTheme: const IconThemeData(color: AppColors.lightGray),
           // Remove Android's overscroll glow
           scrollbarTheme: ScrollbarThemeData(
-            thumbVisibility: MaterialStateProperty.all(true),
-            thickness: MaterialStateProperty.all(6),
-            thumbColor: MaterialStateProperty.all(AppColors.mintGreen.withOpacity(0.7)),
+            thumbVisibility: WidgetStateProperty.all(true),
+            thickness: WidgetStateProperty.all(6),
+            thumbColor: WidgetStateProperty.all(AppColors.mintGreen.withOpacity(0.7)),
             radius: const Radius.circular(10),
           )
         ),

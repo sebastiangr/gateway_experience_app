@@ -19,7 +19,7 @@ class PlayerScreen extends StatelessWidget {
         decoration: const BoxDecoration(gradient: AppColors.playerGradient),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.symmetric(horizontal: 0.0, vertical: 16.0),
             child: Column(
               children: [
                 // Custom App Bar-like section
@@ -32,7 +32,7 @@ class PlayerScreen extends StatelessWidget {
                       tooltip: "Back to Library",
                       style: IconButton.styleFrom(
                         backgroundColor: AppColors.darkBlue.withOpacity(0.3),
-                        padding: const EdgeInsets.all(10)
+                        padding: const EdgeInsets.symmetric(horizontal: 0.0, vertical: 10.0),
                       ),
                     ),
                     const Text(
@@ -83,10 +83,10 @@ class PlayerScreen extends StatelessWidget {
                   height: 150, // Give the visualizer a defined height
                   child: track != null ? const AudioVisualizer() : Container(
                     decoration: BoxDecoration(
-                      border: Border.all(color: AppColors.darkGray.withOpacity(0.5)),
-                      borderRadius: BorderRadius.circular(8)
+                      // border: Border.all(color: AppColors.darkGray.withOpacity(0.5)),
+                      // borderRadius: BorderRadius.circular(8)
                     ),
-                    child: const Center(child: Text("Visualizer", style: TextStyle(color: AppColors.darkGray))),
+                    child: const Center(child: Text("Visual wave", style: TextStyle(color: AppColors.darkGray))),
                   ),
                 ),
 
@@ -109,7 +109,7 @@ class PlayerScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                     backgroundColor: AppColors.mintGreen.withOpacity(0.1),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
+                      borderRadius: BorderRadius.circular(0.0),
                       side: BorderSide(color: AppColors.mintGreen.withOpacity(0.3)),
                     ),
                   ),

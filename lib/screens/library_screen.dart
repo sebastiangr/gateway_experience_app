@@ -98,7 +98,7 @@ class LibraryScreen extends StatelessWidget {
                       ),
                     ),
                   ]);
-                }).toList(),
+                }),
                 const SliverToBoxAdapter(child: SizedBox(height: 20)), // Bottom padding
               ],
             );

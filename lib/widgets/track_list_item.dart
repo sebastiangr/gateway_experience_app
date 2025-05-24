@@ -20,9 +20,7 @@ class TrackListItem extends StatelessWidget {
     if (bytes <= 0) return "0 B";
     const suffixes = ["B", "KB", "MB", "GB", "TB"];
     var i = (math.log(bytes) / math.log(1024)).floor();
-    return ((bytes / math.pow(1024, i)).toStringAsFixed(decimals)) +
-        ' ' +
-        suffixes[i];
+    return '${(bytes / math.pow(1024, i)).toStringAsFixed(decimals)} ${suffixes[i]}';
   }
 
 
@@ -122,7 +120,7 @@ class TrackListItem extends StatelessWidget {
       builder: (context, provider, child) {
         // Encuentra la versión más reciente del track desde el provider
         // 'track' aquí es el 'this.track' del widget TrackListItem
-        final liveTrack = provider.getTrackById(this.track.id) ?? this.track;
+        final liveTrack = provider.getTrackById(track.id) ?? track;
 
         Widget iconContent;
         VoidCallback? onPressedAction = () => libraryProvider.downloadTrack(liveTrack);
